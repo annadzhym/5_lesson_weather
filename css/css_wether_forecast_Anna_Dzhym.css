@@ -1,0 +1,128 @@
+* {
+    transition: all .1s ease-in;
+    font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0 auto;
+    color: white;
+}
+
+html:before {
+    content:"";
+    position:fixed;
+    z-index:1;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    border:10px solid #2b81ac;
+}
+
+html:after {
+    z-index:10;
+    top:auto;
+    border-width:0 0 10px;
+}
+body {
+    background-color: #3399cc;
+}
+
+.main-header {
+    margin-top: 25px;
+    width: 900px;
+}
+
+.cities{
+    list-style-type: none;
+    font-size: 0;
+    width: 1000px;
+    margin-top: 25px;
+}
+
+.cities li {
+    display: inline-block;
+    height: auto;
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid white;
+    padding: 20px;
+}
+
+.city1 {
+    background-color: #3399cc;
+    width: 50%;
+}
+
+.city2 {
+    background-color: #33cccc;
+    width: 25%;
+}
+
+.city3 {
+    background-color: #996699;
+    width: 25%;
+}
+
+.city4 {
+    background-color: #c24747;
+    width: 25%;
+}
+
+.city5 {
+    background-color: #e2674a;
+    width: 25%;
+}
+
+.city6 {
+    background-color: #ffcc66;
+    width: 25%;
+}
+
+.city7 {
+    background-color: #99cc99;
+    width: 25%;
+}
+
+.city8 {
+    background-color: #669999;
+    width: 25%;
+}
+
+.city9 {
+    background-color: #cc6699;
+    width: 50%;
+}
+
+.city10 {
+    background-color: #339966;
+    width: 25%;
+}
+
+.city11 {
+    background-color: #666699;
+    width: 100%;
+}
+
+.wi {
+    font-size: larger;
+}
+span {
+    word-wrap: break-word;
+    opacity: 0.8;
+}
+.advice {
+    margin-top: 25px;
+    width: 900px;
+}
+
+ul:hover {
+    background-color: white;
+    opacity: 0.5;
+}
+li:hover {
+    opacity: 1;
+    filter: alpha(100);
+    cursor: pointer;
+}
+
