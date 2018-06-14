@@ -5,13 +5,12 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     margin: 0 auto;
-    color: white;
 }
 
 html:before {
     content:"";
     position:fixed;
-    z-index:1;
+    z-index:-1;
     top:0;
     left:0;
     right:0;
@@ -25,19 +24,22 @@ html:after {
     border-width:0 0 10px;
 }
 body {
+    color: white;
     background-color: #3399cc;
 }
 
 .main-header {
     margin-top: 25px;
-    width: 900px;
+    width: 50%;
 }
 
 .cities{
     list-style-type: none;
     font-size: 0;
-    width: 1000px;
+    width: 50%;
     margin-top: 25px;
+    padding: 0;
+    border: 2px solid white;
 }
 
 .cities li {
@@ -113,16 +115,13 @@ span {
 }
 .advice {
     margin-top: 25px;
-    width: 900px;
+    width: 50%;
 }
 
-ul:hover {
-    background-color: white;
+.cities:hover li:not(:hover){
     opacity: 0.5;
 }
-li:hover {
-    opacity: 1;
-    filter: alpha(100);
+ul {
     cursor: pointer;
 }
 
